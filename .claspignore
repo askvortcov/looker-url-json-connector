@@ -1,0 +1,4 @@
+# Push only the manifest and the connector code.
+**/**
+!appsscript.json
+!src/*.js

@@ -1,0 +1,17 @@
+# Local clasp settings and Google credentials: never commit them.
+.clasp.json
+.clasprc.json
+creds.json
+credentials.json
+client_secret*.json
+
+# Keys and local notes.
+.env
+.env.*
+*.local
+*.local.*
+*.pem
+*.key
+
+node_modules/
+.DS_Store

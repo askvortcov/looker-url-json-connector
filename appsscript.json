@@ -1,0 +1,20 @@
+{
+  "timeZone": "Etc/UTC",
+  "runtimeVersion": "V8",
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": ["https://www.googleapis.com/auth/script.external_request"],
+  "dataStudio": {
+    "name": "looker-url-json-connector",
+    "company": "PLACEHOLDER company or author name",
+    "companyUrl": "https://example.com/PLACEHOLDER-company",
+    "logoUrl": "https://example.com/PLACEHOLDER-logo-48x48.png",
+    "addOnUrl": "https://example.com/PLACEHOLDER-connector-page",
+    "supportUrl": "https://example.com/PLACEHOLDER-support",
+    "privacyPolicyUrl": "https://example.com/PLACEHOLDER-privacy",
+    "termsOfServiceUrl": "https://example.com/PLACEHOLDER-terms",
+    "shortDescription": "Read rows from any HTTPS JSON API that takes a key in a request header.",
+    "description": "Reads rows from any HTTPS JSON API that takes a key or token in a request header (Authorization: Bearer by default). You enter the API URL, an optional query string and the path to the array of rows; the fields and their types are detected from the response. The selected date range is passed to the API as query parameters. The connector runs in your own Google account and sends your data and key to no third party.",
+    "authType": ["KEY"],
+    "feeType": ["FREE"]
+  }
+}

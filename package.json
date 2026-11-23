@@ -1,0 +1,13 @@
+{
+  "name": "looker-url-json-connector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Looker Studio community connector for any HTTPS JSON API with a key header",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
