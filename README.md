@@ -174,6 +174,11 @@ by itself the next time the data source is opened.
 - The host must be a public name or IPv4 address. IPv6 literals are refused.
 - Field names that differ only in punctuation (`a.b` and `a_b`) collide and are refused.
 
+## Website
+
+<https://looker-url-json-connector.softec.be> is built from `site/`: the connector page, support,
+the privacy policy and the terms of service.
+
 ## Development
 
 ```sh

@@ -107,11 +107,12 @@ review takes. For a generic connector, prepare a public demo API and a key for t
 | --- | --- | --- |
 | Final name without "connector" and without the Google product name | manifest `name` | open |
 | Company or author name and URL | `company`, `companyUrl` | placeholder |
-| Logo, static, not animated, at least 48x48, on a host we control | `logoUrl` | placeholder; `assets/icon.svg` is a starting point |
-| Connector page on our own domain | `addOnUrl` | missing |
-| Privacy policy on that domain | `privacyPolicyUrl` | missing |
-| Terms of service on that domain | `termsOfServiceUrl` | missing |
-| Support page (not an email address) | `supportUrl` | missing; the public repository's issues page may serve |
+| Logo, static, not animated, at least 48x48, on a host we control | `logoUrl` | draft: `site/logo.png` (96x96), served from the website |
+| Connector page on our own domain | `addOnUrl` | written: `site/index.html`; live once the website is deployed |
+| Privacy policy on that domain | `privacyPolicyUrl` | written: `site/privacy/`; needs the operator's legal name and a contact |
+| Terms of service on that domain | `termsOfServiceUrl` | written: `site/terms/`; needs the operator's legal name; governing law is not stated |
+| Support page (not an email address) | `supportUrl` | written: `site/support/`, which sends people to GitHub issues |
+| Error logging in a gallery version | privacy policy | open: with `exceptionLogging` `STACKDRIVER`, error texts (API host and path) of every user would land in the publisher's logs. Set it to `NONE` for the published version or disclose it in the privacy policy |
 | Public repository | the project page, support | exists; nothing pushed by the build |
 | OAuth client verification | mandatory | not started |
 | "Production" deployment shared with Google's two review addresses | review | not started |

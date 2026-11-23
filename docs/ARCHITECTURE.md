@@ -26,6 +26,13 @@ Looker Studio --calls--> Apps Script (this code, in the owner's account) --GET--
 `appsscript.json` is the manifest. The product name lives there (`dataStudio.name`); the other
 places that repeat it are the README title and `package.json`.
 
+## Website
+
+`site/` is the static website: the connector page, support, the privacy policy and the terms
+that the manifest links to. It is plain HTML and one stylesheet, with no build step.
+`.github/workflows/pages.yml` publishes it to GitHub Pages on every push to `main`;
+`test/site.test.js` checks its links and that the manifest URLs exist.
+
 ## One request
 
 `getSchema(request)` and `getData(request)` share one path:

@@ -31,6 +31,10 @@ services. The first real deployment must confirm:
 ## Stage 2: public repository
 
 - [x] README, license, contribution guide, issue and pull request templates, CI
+- [x] Website with the connector page, support, privacy policy and terms (`site/`, deployed to
+      GitHub Pages by `.github/workflows/pages.yml`)
+- [ ] **Owner:** enable GitHub Pages (source: GitHub Actions), set the custom domain and DNS
+- [ ] **Owner:** add the operator's legal name and a contact to the privacy policy and the terms
 - [ ] Demo GIF in the README
 - [ ] **Owner:** enable private vulnerability reporting on GitHub, decide the final name
 
