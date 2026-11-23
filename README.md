@@ -56,9 +56,13 @@ You need a Google account, Node.js 22 or later and `npm`.
    to `.clasp.json` and paste the script id.
 5. **Push the code.** `clasp push` uploads `appsscript.json` and `src/*.js` and nothing else
    (see `.claspignore`).
-6. **Create a deployment.** Run `clasp open-script`. In the editor click **Deploy > New
-   deployment**, select the type if asked, and click **Deploy**.
-7. **Copy the Deployment ID** from **Deploy > Manage deployments**.
+6. **Get a deployment id.** Run `clasp open-script`. In the editor click **Deploy > Test
+   deployments** and copy the **Head Deployment ID**. It always runs the code you pushed last,
+   which is what private use needs. Do not use **Deploy > New deployment > Add-on**: that type
+   is for the Google Workspace Marketplace and asks to change the Google Cloud project.
+7. **Optional: a fixed version.** `clasp create-deployment` creates a versioned deployment and
+   prints its id. Use it when other people rely on the data source and should not get every
+   push at once.
 8. **Open the connect URL** with your id at the end:
    ```
    https://lookerstudio.google.com/datasources/create?connectorId=<DEPLOYMENT_ID>
@@ -79,8 +83,9 @@ You need a Google account, Node.js 22 or later and `npm`.
     each response for 5 minutes, so a change in the API can take that long to show. To change
     how often Looker Studio itself refetches, edit the data source and click **Data freshness**.
 
-After a code change run `clasp push`, then in **Deploy > Manage deployments** edit the
-deployment and select a new version. The id stays the same.
+After a code change run `clasp push`. The Head deployment picks it up at once and its id
+stays the same. A versioned deployment keeps its old code until you edit it in **Deploy >
+Manage deployments** and select a new version.
 
 The steps were checked against the code and the official documentation, not run: the author of
 this README had no Google account in the build environment. See "Not verified yet" in
