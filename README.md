@@ -176,8 +176,8 @@ by itself the next time the data source is opened.
 
 ## Website
 
-<https://looker-url-json-connector.softec.be> is built from `site/`: the connector page, support,
-the privacy policy and the terms of service.
+<https://looker-url-json-connector.softec.be> has the connector page, support, the privacy policy
+and the terms of service. Its source is the `gh-pages` branch.
 
 ## Development
 

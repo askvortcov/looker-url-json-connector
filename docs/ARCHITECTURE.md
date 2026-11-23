@@ -28,10 +28,9 @@ places that repeat it are the README title and `package.json`.
 
 ## Website
 
-`site/` is the static website: the connector page, support, the privacy policy and the terms
-that the manifest links to. It is plain HTML and one stylesheet, with no build step.
-`.github/workflows/pages.yml` publishes it to GitHub Pages on every push to `main`;
-`test/site.test.js` checks its links and that the manifest URLs exist.
+The website (the connector page, support, the privacy policy and the terms that the manifest
+links to) is not in this branch. It lives in the `gh-pages` branch, which holds only the static
+site and is served by GitHub Pages. `main` holds only the connector.
 
 ## One request
 
